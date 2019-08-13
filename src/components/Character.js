@@ -4,7 +4,8 @@ import Summary from './Summary';
 const Character = props => {
   const [loadedCharacter, setLoadedCharacter] = useState({});
   const [isLoading, setLoading] = useState(false);
-  console.log('Rendering...');
+
+  //using regular hooks useState and useEffect
   const fetchData = () => {
     console.log(
       'Sending Http request for new character with id ' +
